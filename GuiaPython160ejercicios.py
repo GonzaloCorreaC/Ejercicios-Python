@@ -66,3 +66,7 @@
 #nombre = input("Ingrese un nombre: ")
 #nombre = nombre.replace("  "," ")
 #print(f"Nombre corregido: {nombre}")
+
+
+
+print
