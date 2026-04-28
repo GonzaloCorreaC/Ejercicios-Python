@@ -1,3 +1,4 @@
+##BLOQUE1##
 ##ej1
 #rut = input("Ingrese su rut (Sin punton ni guion): ")
 
@@ -67,6 +68,81 @@
 #nombre = nombre.replace("  "," ")
 #print(f"Nombre corregido: {nombre}")
 
+##ej11
+#texto = input("Ingrese el texto: ")
+#texto = texto.lower
+
+#if texto.endswith(".pdf") and len(texto) > 5:
+    #print("Texto ingresado valido")
+#else:
+    #print("Texto invalido")
+
+##BLOQUE2##
+##ej41
+#usuario = input("usuario: ")
+
+#if usuario == "admin":
+    #print("acceso permitido")
+#else:
+    #edad = int(input("Ingrese su edad: "))
+
+    #if edad >= 18:
+        #invitacion = input("Tiene invitacion (si/no): ")
+
+        #if invitacion.lower() == "si":
+            #print("Acceso permitido")
+        #else:
+            #print("Acceso denegado")
+    #else:
+        #print("Acceso denegado")
+
+##ej42
+#nombre = input("Ingrese su nombre: ")
+
+#if any(c.isdigit() for c in nombre):
+    #print("Datos invalidos")
+#else:
+    #clave = (input("Ingrese la clave: "))
+
+    #if len(clave) < 4:
+        #print("Datos invalidos")
+    #else:
+        #print("Datos validos")
+
+##ej43 MAL HECHO, CODIGO DE EJEMPLO SACADO DE LA GUIA####
+#datos = input("Ingrese un dato: ")
+
+#if not datos.strip():
+    #print("Campo vacio, error")
+
+##ej44
+#precio = int(input("Ingrese el precio del producto: "))
+
+#if precio >= 1000 and precio <= 5000:
+    #print("Precio dentro del rango valido")
+#else:
+    #print("Precio fuera del rango valido")
+
+##ej45
+#texto = input("Ingrese el texto: ")
+
+#if not texto.startswith("#") and len(texto) % 2 == 0:
+    #print("Texto valido")
+#else:
+    #print("Texto invalido")
+
+##BLOQUE3##
 
 
-print
+
+
+
+
+    
+
+
+
+
+
+
+
