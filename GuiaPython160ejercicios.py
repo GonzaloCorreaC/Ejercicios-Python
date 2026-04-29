@@ -132,6 +132,67 @@
     #print("Texto invalido")
 
 ##BLOQUE3##
+##ej81
+#intentos = 0
+
+#while intentos < 3:
+    #clave = input("Clave:")
+
+    #if clave == "1234":
+        #print("Acceso permitido")
+        #break
+    #intentos += 1
+
+#if intentos == 3:
+    #print("Tarjeta bloqueada")
+
+##ej82
+#total = 0
+
+#while True:
+    #num = int(input("Numero (0 para salir): "))
+    #if num == 0 :
+        #print("Saliendo")
+        #break
+    #total += num
+#print(f"Suma final: {total}")
+
+##ej83
+#while True:
+    #nom = input("Ingresa un nombre: ")
+
+    #if nom.isalpha():
+        #print("Nombre correcto")
+        #break
+    #else:
+        #print("Entrada inválida. Solo se permiten letras.")
+
+##BLOQUE4##
+##ej121
+
+#producto = int(input("Ingrese el valor neto del producto: "))
+
+#iva = producto * 0.19
+#total = producto * 1.19
+
+# print(f"El valor de su IVA es de: {int(iva)} y el valor final es de: {int(total)}")
+
+##ej122
+#bruto = int(input("Ingrese el valor bruto: "))
+
+#liquido = bruto * 0.1375
+#liquido = bruto - liquido
+
+#print(f"El valor liquido es de: {int(liquido)}")
+
+##ej123
+
+        
+
+    
+    
+    
+
 
 
 
