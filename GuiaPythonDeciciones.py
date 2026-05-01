@@ -1,3 +1,4 @@
+##ej1
 #nombre = input("Ingrese un nombre: ")
 
 #if len(nombre) > 5 and len(nombre) < 15 and nombre[0].isalpha() and nombre.isalnum():
@@ -7,6 +8,7 @@
 #else:
     #print("El usuario debe ser alfanumerico y empezar en una letra")
 
+##ej2
 #contraseña = input("Ingrese la contraseña: ")
 
 #if len(contraseña) >= 8 and not contraseña.isalpha() and not contraseña.isnumeric() and contraseña.find(" ") == -1:
@@ -16,6 +18,7 @@
 #else:
     #print("La contraseña debe incluir letras y numeros y no tener espacios")
 
+##ej3
 #nombre = input("Ingresa un nombre: ")
 
 #if nombre.islower() or nombre.isupper():
@@ -26,6 +29,7 @@
 #else:
     #print(f"Nombre correcto: {nombre}")
 
+##ej4
 #correo = input("Correo: ")
 
 #if correo.count("@") == 1 and not correo.startswith("@") and (correo.endswith(".com") or correo.endswith(".org")):
@@ -35,6 +39,7 @@
 #else:
     #print("El correp debe terminar en .com o .org")
 
+##ej5
 #palabra = input("Ingrese una palabra: ")
 #palabra_limpia = palabra.replace(" ", "").lower()
 
@@ -45,6 +50,7 @@
 #else:
     #print("No es un palidromo")
 
+##ej6
 #archivo = input("Ingrese el nombre del archivo: ")
 #archivo = archivo.lower()
 
@@ -55,6 +61,7 @@
 #else:
     #print("El archivo es de formato desconocido")
 
+##ej7
 #url = input("Ingrese una URL: ")
 
 #if url.startswith("https://") or url.startswith("http://"):
@@ -69,6 +76,7 @@
 #else:
     #print("Error: La URL debe comenzar con http:// o https://")
 
+##ej8
 #comentario = input("Ingresa un comentario: ")
 #comentario = comentario.strip().lower()
 
@@ -80,6 +88,7 @@
 #else:
     #print(f"Comentario publicado: {comentario}")
 
+##ej9
 #codigo = input("Ingresa el codigo del producto: ")
 #codigo = codigo.strip().upper()
 
@@ -90,6 +99,7 @@
 #else:
     #print("Error: La parte final debe contener exactamente 4 digitos numericos")
 
+##ej10
 #nombre = input("Ingresa tu nombre: ")
 #apellido = input("Ingresa tu apellido: ")
 
