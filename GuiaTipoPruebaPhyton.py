@@ -134,3 +134,156 @@
         #print("Es consonante")
     #else:
         #print("No es letra")
+
+##ej11
+#base = int(input("Ingrese la base del rectangulo: "))
+#altura = int(input("Ingrese la altura del rectangulo: "))
+
+#area = base * altura
+
+#if area > 100:
+    #print("Rectangulo grande")
+#else:
+    #print("Rectangulo pequeño")
+
+##ej12
+#num1 = int(input("Ingresa el primer numero: "))
+#num2 = int(input("Ingresa el segundo numero: "))
+
+#num1 = num1 + num2
+#num2 = num2 - 3
+
+#if num1 > num2:
+    #print(f"El primer numero actualizado es mayor: {num1} > {num2}")
+#elif num2 > num1:
+    #print(f"El segundo numero actualizado es mayor: {num2} > {num1}")
+#else:
+    #print("Son iguales")
+
+##ej13
+#texto = input("Ingrese un texto: ")
+
+#if len(texto) > 10:
+    #texto = texto.upper()
+#else:
+    #texto = texto.lower()
+
+#print(texto)
+
+##ej14
+#num = int(input("Ingresa un numero (1-7): "))
+
+#if num == 1:
+    #dia = "Lunes"
+#elif num == 2:
+    #dia = "Martes"
+#elif num == 3:
+    #dia = "Miercoles"
+#elif num == 4:
+    #dia = "Jueves"
+#elif num == 5:
+    #dia = "Viernes"
+#elif num == 6:
+    #dia = "Sabado"
+#elif num == 7:
+    #dia = "Domingo"
+#else:
+    #dia = "Numero invalido"
+
+#print(dia)
+
+##ej15
+#num1 = int(input("Ingresa el primer numero: "))
+#num2 = int(input("Ingresa el segundo numero: "))
+
+#suma = num1 + num2
+#resta = num1 - num2
+#multiplicacion = num1 * num2
+
+#print("1=suma, 2=resta, 3=multiplicación")
+#opt = int(input("Que operacion quiere ver: "))
+
+#if opt == 1:
+    #print(f"Suma: {suma}")
+#elif opt == 2:
+    #print(f"Resta: {resta}")
+#elif opt == 3:
+    #print(f"Multiplicacion: {multiplicacion}")
+#else:
+    #print("Numero invalido")
+
+##ej16
+#producto = input("Nombre producto: ")
+#precio = int(input("Ingresa el precio: "))
+
+#if precio > 1000:
+    #precio = precio * 0.85
+#else: 
+    #precio = precio * 0.95
+
+#print(f"El precio final es de: {int(precio)}")
+
+##ej17
+#num1 = int(input("Ingresa el primer numero: "))
+#num2 = int(input("Ingresa el segundo numero: "))
+#num3 = int(input("Ingresa el tercer numero: "))
+
+#positivos = 0
+
+#if num1 > 0:
+    #positivos = positivos + 1
+#if num2 > 0:
+    #positivos = positivos + 1
+#if num3 > 0:
+    #positivos = positivos + 1
+
+#if positivos >= 2:
+    #resultado = True
+#else:
+    #resultado = False
+
+#print(f"¿Al menos dos son positivos? {resultado}")
+
+##ej18
+#año = int(input("Ingresa un año: "))
+
+#if (año % 4 == 0 and año % 100 != 0) or (año % 400 == 0):
+    #print(f"{año} es bisiesto")
+#else:
+    #print(f"{año} no es bisiesto")
+
+##ej19
+#num = int(input("Numero: "))
+
+
+#if num < 0:
+    #num = -num
+
+#print(f"Valor absoluto: {num}")
+
+#veces_cabe = num // 3
+#print(f"El 3 cabe {veces_cabe} veces en {num}")
+
+##ej20
+#nombre = input("Nombre: ")
+#edad = int(input("Edad: "))
+#ciudad = input("Ciudad: ")
+#horas = float(input("Horas trabajadas: "))
+#valor_hora = float(input("Valor por hora: "))
+
+#salario = horas * valor_hora
+#print(f"Salario bruto: {salario}")
+
+#if salario > 1000:
+    #salario = salario * 0.80
+    #print("Se aplico impuesto del 20%")
+
+#if edad < 18 or edad > 65:
+    #salario = salario * 0.95
+    #print("Se aplico descuento especial del 5%")
+
+#print("Resumen")
+#print(f"Nombre: {nombre}")
+#print(f"Ciudad: {ciudad}")
+#print(f"Edad: {edad}")
+#print(f"Salario neto final: {salario}")
