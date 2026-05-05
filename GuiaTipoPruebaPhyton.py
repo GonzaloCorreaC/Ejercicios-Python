@@ -287,3 +287,4 @@
 #print(f"Ciudad: {ciudad}")
 #print(f"Edad: {edad}")
 #print(f"Salario neto final: {salario}")
+
