@@ -116,3 +116,20 @@
         #print(precio, "-> descuento 10% ->", total)
     #else:
         #print(precio, "-> sin descuento ->", precio)
+
+##ej11
+#secreto = 18
+#intentos = [10, 25, 18, 7]
+#i = 0
+
+#while i < len(intentos):
+    #if intentos[i] == secreto:
+        #print("Adivinaste el numero")
+        #break
+    #elif intentos[i] < secreto:
+        #print(f"{intentos[i]} -> Es menor que el secreto")
+    #else:
+        #print(f"{intentos[i]} -> Es mayor que el secreto")
+    #i += i
+
+##ej12
