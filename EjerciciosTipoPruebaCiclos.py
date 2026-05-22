@@ -107,4 +107,121 @@
 
     #except ValueError:
         #print("Ingrese solo numeros, opciones disponibles desde el 1 al 5")
+
+##ej3
+#temperatura_alta = 0
+#temperatura_normales = 0
+
+#while True:
+    #try:
+        #lecturas = int(input("Ingrese la cantidad de lectura de sensores: "))
+
+        #if lecturas > 0:
+            #break
+        ##print("¡Cantidad inválida! Ingresa un entero positivo para continuar.")
+
+    #except ValueError:
+        #print("¡Cantidad inválida! Ingresa un entero positivo para continuar.")
     
+#for i in range(lecturas):
+    #datos_lectura = input(f"Codigo de sensor {i+1}: ")
+
+    #while len(datos_lectura) < 5 or " " in datos_lectura:
+        #datos_lectura = input(f"Error numero invalidos, minimo 5 caracteres y no debe contener espacios, reingrese codigo de sensor {i+1}: ")
+
+    #while True:
+        #try:
+            #temperatura_registrada = int(input("Ingrese temperatura registrada: "))
+
+            #if -10 <= temperatura_registrada <= 50:
+
+                #if temperatura_registrada > 30:
+                    #temperatura_alta += 1
+                #else:
+                    #temperatura_normales += 1
+                #break
+
+            #else:
+                #print("¡Error de lectura! Ingresa un número entero válido dentro del rango térmico permitido (-10 a 50).")
+
+        #except ValueError:
+            #print("¡Error de lectura! Ingresa un número entero válido dentro del rango térmico permitido (-10 a 50).")
+
+#print(f"¡El invernadero registró {temperatura_alta} lecturas ALTAS y {temperatura_normales} lecturas NORMALES! ¡Ajuste de ventilación ejecutado!")
+
+##ej4
+#saldo_actual = 150000
+#saldo_maximo = 500000
+#balance_mov = 0
+
+#print("Bienvenido a la cafeteria de la universidad")
+
+#while True:
+
+    #print("1. Ver saldo actual en caja")
+    #print("2. Registrar egreso (Gasto de insumos)")
+    #print("3. Registrar ingreso (Reposición de fondos)")
+    #print("4. Ver balance neto de movimientos")
+    #print("5. Cerrar caja y salir")
+
+    #try:
+        #opcion = int(input("Ingrese la opcion deseada: "))
+
+        #if opcion == 1:
+            #print(saldo_actual)
+        
+        #elif opcion == 2:
+
+            #try:
+                #monto_egreso = int(input("Ingrese el gasto de insumos: "))
+
+                #if monto_egreso > 0:
+
+                    #if monto_egreso <= saldo_actual:
+                        #saldo_actual -= monto_egreso
+                        #balance_mov -= monto_egreso
+                    #else:
+                        #print("monto ingresado no puede superar el sueldo actual")
+                
+                #else:
+                    #print("Monto no puede ser <= 0")      
+
+            #except ValueError:
+                #print("Ingrese solo numero enteros")
+
+        #elif opcion == 3:
+
+            #try:
+                #monto_ingreso = int(input("Ingrese la reposicion de fondos: "))
+
+                #if monto_ingreso > 0:
+
+                    #if monto_ingreso + saldo_actual <= saldo_maximo:
+                        #saldo_actual += monto_ingreso
+                        #balance_mov += monto_ingreso
+                    #else:
+                        #print("Operacion rechazada, no puede superar los 500000")
+                
+                #else:
+                    #print("Monto no puede ser <= 0")
+                
+            #except ValueError:
+                #print("Ingrese solo numero enteros")
+        
+        #elif opcion == 4:
+            #print(f"balance neto de movimientos: {balance_mov}")
+        
+        #elif opcion == 5:
+            #print("Gracias por utilizar nuestro software, hasta la próxima.")
+            #break
+
+        #else:
+            #print("Opcion no valida, opciones disponibles del 1-5")
+
+    #except ValueError:
+        #print("Ingrese solo numeros enteros del 1-5")
+
+
+
+
+
