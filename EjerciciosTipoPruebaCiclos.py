@@ -221,7 +221,46 @@
     #except ValueError:
         #print("Ingrese solo numeros enteros del 1-5")
 
+##ej5
+#maleto_sobrepeso = 0
+#maleta_estandar = 0
 
+#while True:
+    #try:
+        #maletas = int(input("Ingresa cuantas maletas se procesaran en el vuelo actual: "))
+
+        #if maletas > 0:
+            #break
+        #else:
+            #print("¡Cantidad inválida! Ingresa un entero positivo para continuar.")
+    #except ValueError:
+        #print("¡Cantidad inválida! Ingresa un entero positivo para continuar.")
+
+#for i in range(maletas):
+    #codigo_barras = input(f"Ingrese el codigo de barras del equipaje numero {i+1}: ")
+
+    #while len(codigo_barras) < 7 or " " in codigo_barras:
+        #print("Ingrese valores validos, minimo 7 caracteres y no debe contener espacios")
+        #codigo_barras = input(f"Ingrese el codigo de barras del equipaje numero {i+1}: ")
+    
+    #while True:
+        #try:
+            #peso_maletas = int(input(f"Ingrese el peso de la maleta numero {i+1}: "))
+
+            #if peso_maletas > 0:
+                #if peso_maletas > 23:
+                    #maleto_sobrepeso += 1
+                #else:
+                    #maleta_estandar += 1
+                #break
+            #else:
+                #print("¡Error logístico! Ingresa un número entero positivo para la capacidad de carga.")
+        #except ValueError:
+            #print("¡Error logístico! Ingresa un número entero positivo para la capacidad de carga.")
+
+#print(f"¡La flota cuenta con {maleto_sobrepeso} maletas pesadas y {maleta_estandar} maletas estandar ¡Rutas asignadas!")
+
+##ej6
 
 
 
