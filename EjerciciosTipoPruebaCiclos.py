@@ -221,7 +221,7 @@
     #except ValueError:
         #print("Ingrese solo numeros enteros del 1-5")
 
-##ej5
+#ej5
 #maleto_sobrepeso = 0
 #maleta_estandar = 0
 
@@ -237,11 +237,15 @@
         #print("¡Cantidad inválida! Ingresa un entero positivo para continuar.")
 
 #for i in range(maletas):
-    #codigo_barras = input(f"Ingrese el codigo de barras del equipaje numero {i+1}: ")
+    #print(f"Registrando codigo be barras para cada maleta ")
 
-    #while len(codigo_barras) < 7 or " " in codigo_barras:
-        #print("Ingrese valores validos, minimo 7 caracteres y no debe contener espacios")
-        #codigo_barras = input(f"Ingrese el codigo de barras del equipaje numero {i+1}: ")
+    #while True:
+        #codigo_barras = input(f"Ingrese el codigo de la maleta numero {i+1}")
+
+        #if len(codigo_barras) >= 7 and " " not in codigo_barras:
+            #break
+        #else:
+            #print("Ingrese valores validos, minimo 7 caracteres y no debe contener espacios")
     
     #while True:
         #try:
@@ -253,14 +257,72 @@
                 #else:
                     #maleta_estandar += 1
                 #break
-            #else:
-                #print("¡Error logístico! Ingresa un número entero positivo para la capacidad de carga.")
+            ##print("¡Error logístico! Ingresa un número entero positivo para la capacidad de carga.")
         #except ValueError:
             #print("¡Error logístico! Ingresa un número entero positivo para la capacidad de carga.")
 
 #print(f"¡La flota cuenta con {maleto_sobrepeso} maletas pesadas y {maleta_estandar} maletas estandar ¡Rutas asignadas!")
 
 ##ej6
+#libros_disponibles = 100
+#historial = 0
+#libros_maximo = 100
 
+#print("Bienvenido al control de Préstamos e Inventario — Biblioteca Escolar")
 
+#while True:
+    #print("1. Localidades disponibles")
+    #print("2. Vender localidades")
+    #print("3. Devolver localidades")
+    #print("4. Historial de ventas")
+    #print("5. Salir")
 
+    #try:
+        #opcion = int(input("Selecciona una opcion: "))
+
+        #if opcion == 1:
+            #print(f"Cantidad de libros actuales: {libros_disponibles}")
+        
+        #elif opcion == 2:
+            #try:
+                #libros_curso = int(input("Ingrese la cantidad de libors que se lleva el curso: "))
+
+                #if libros_curso > 0:
+                    #if libros_curso <= libros_disponibles:
+                        #libros_disponibles -= libros_curso
+                        #historial += libros_curso 
+                    #else:
+                        #print("El numero no debe superar la cantidad de libors disponibles")
+                #else:
+                    #print("Ingrese solo numeros positivos")
+            #except ValueError:
+                #print("Ingrese solo numeros enteros")
+        
+        #elif opcion == 3:
+            #try:
+                #libros_devolucion = int(input("Ingresa la cantidad de libros que se devuelven: "))
+
+                #if libros_devolucion > 0:
+                    #if (libros_devolucion + libros_disponibles) <= libros_maximo:
+                        #libros_disponibles += libros_devolucion
+                        #historial -= libros_devolucion
+                    #else:
+                        #print("El total del inventario de libros no debe superar el limite de 100")
+                #else:
+                    #print("Ingrese solo numeros positivos")
+
+            #except ValueError:
+                #print("Ingrese solo numeros enteros")
+        
+        #elif opcion == 4:
+            #print(f"Transacciones netas: {historial}")
+        
+        #elif opcion == 5:
+            #print("Gracias por utilizar nuestro software, hasta la próxima.")
+            #break
+        
+        #else:
+            #print("Ingrese una opcion valida, 1-5")
+
+    #except ValueError:
+        #print("Selecciona una opcion valida, solo numero enteros del 1 al 5")
